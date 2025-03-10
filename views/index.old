@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rebecca Sucgang">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Rebecca Sucgang's professional website">
+    <title>Rebecca Sucgang</title>
+</head>
+<body style="font-family: Arial;">
+<header style="color: blue; background: lightblue;">
+    <h1>Rebecca Sucgang</h1>
+    <nav>
+        <ul style="list-style-type: none; padding: 0; margin: 0; display: flex;">
+            <li style="margin-right: 20px;"><a href="index.html">Home</a></li>
+            <li style="margin-right: 20px;"><a href="cv.html">CV</a></li>
+            <li style="margin-right: 20px;"><a href="contact.html">Contact Me</a></li>
+            <li><a href="fun.html">For Fun</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="main">
+    <h2>Hi, my name is Rebecca!</h2>
+    <p id="intro">Hello world!</p>
+    <img src="static_image_of_myself.jpg" alt="Your Image Description">
+</div>
+
+<footer>
+    <p>&copy; 2025 designed 👩🏻‍🎨 and coded 👩🏻‍💻 by Rebecca Sucgang</p>
+</footer>
+</body>
+</html>
