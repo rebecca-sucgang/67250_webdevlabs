@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../static/style.css">
-    <script defer src="../static/script.js"></script>
     <meta charset="UTF-8">
     <meta name="author" content="Rebecca Sucgang">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
@@ -10,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="../static/script.js"></script>
     <title>Rebecca Sucgang</title>
 </head>
+<body onload="addYear()">
     <h1 id="webname">Rebecca Sucgang</h1>
     <nav>
         <ul style="list-style-type: none; padding: 0; margin: 0; display: flex;">
@@ -22,19 +23,20 @@
         </ul>
     </nav>
 
-<div class="main">
-    <h2>Things I love to do for fun</h2>
-    <ul>
-        <li>Reading books</li>
-        <li>Crocheting</li>
-        <li>Traveling</li>
-        <li>Cooking</li>
-        <li>Spending time with friends</li>
-    </ul>
-</div>
+    <div class="main">
+        <h2>Things I love to do for fun</h2>
+        <button id="clickToSeeButton" type="button" onclick="showList()">Click to see...</button>
+        <ul id="funList">
+            <li>Reading books</li>
+            <li>Crocheting</li>
+            <li>Traveling</li>
+            <li>Cooking</li>
+            <li>Spending time with friends</li>
+        </ul>
+    </div>
 
-<footer>
-    <p>&copy; 2025 designed 👩🏻‍🎨 and coded 👩🏻‍💻 by Rebecca Sucgang</p>
-</footer>
+    <footer>
+        <p id="copyYear">designed 👩🏻‍🎨 and coded 👩🏻‍💻 by Rebecca Sucgang  &copy;</p>
+    </footer>
 </body>
 </html>

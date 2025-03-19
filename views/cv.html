@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../static/style.css">
-    <script defer src="../static/script.js"></script>
     <meta charset="UTF-8">
     <meta name="author" content="Rebecca Sucgang">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
@@ -10,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="./static/script.js"></script>
     <title>Rebecca Sucgang</title>
 </head>
+<body onload="addYear()">
     <h1 id="webname">Rebecca Sucgang</h1>
     <nav>
         <ul style="list-style-type: none; padding: 0; margin: 0; display: flex;">
@@ -78,7 +80,7 @@
 </div>
 
 <footer>
-    <p>&copy; 2025 designed 👩🏻‍🎨 and coded 👩🏻‍💻 by Rebecca Sucgang</p>
+    <p id="copyYear">designed 👩🏻‍🎨 and coded 👩🏻‍💻 by Rebecca Sucgang  &copy;</p>
 </footer>
 </body>
 </html>
