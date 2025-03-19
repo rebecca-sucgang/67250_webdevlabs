@@ -36,8 +36,8 @@ function findTheBanana(fruitArray) {
     };
 }
 
-findTheBanana(L1)
-findTheBanana(L2)
+// findTheBanana(L1)
+// findTheBanana(L2)
 
 function findTheBananaUsingForEach(fruitArray, arrayName) {
     fruitArray.forEach(function(fruit, index) {
@@ -48,8 +48,8 @@ function findTheBananaUsingForEach(fruitArray, arrayName) {
     });
 }
 
-findTheBananaUsingForEach(L1, 'first array')
-findTheBananaUsingForEach(L2, 'second array')
+// findTheBananaUsingForEach(L1, 'first array')
+// findTheBananaUsingForEach(L2, 'second array')
 
 function greetingFunc() {
     var d = new Date();
@@ -68,3 +68,37 @@ function greetingFunc() {
 }
 
 greetingFunc();
+
+function addYear() {
+    var year = new Date();
+    var fullYear = year.getFullYear();
+    var message = document.getElementById("copyYear")
+    message.innerHTML += fullYear
+}
+
+function showList() {
+    document.getElementById("funList").style.display = "block";
+    document.getElementById("clickToSeeButton").style.display = "none";
+}
+
+$("#readLess").click(function(){
+    $("#longIntro").hide();
+    $("#readLess").hide();
+    $("#readMore").show();
+});
+
+$("#readMore").click(function(){
+    $("#longIntro").show();
+    $("#readLess").show();
+    $("#readMore").hide();
+});
+
+function validate() {
+    var userName = document.getElementById("UserName");
+    var userEmail = document.getElementById("UserEmail");
+    var userText = document.getElementById("UserText");
+    var msg = document.getElementById("ValidateMsg");
+    if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()) {
+        msg.innerHTML = "Please fill out the form correctly so I can get back to you :)";
+    }
+ }
