@@ -23,16 +23,34 @@
         </ul>
     </nav>
 
-    <div class="main">
-        <h2>Things I love to do for fun</h2>
-        <button id="clickToSeeButton" type="button" onclick="showList()">Click to see...</button>
-        <ul id="funList">
-            <li>Reading books</li>
-            <li>Crocheting</li>
-            <li>Traveling</li>
-            <li>Cooking</li>
-            <li>Spending time with friends</li>
-        </ul>
+    <div class="mainLayout">
+        <div item1>
+            <h2>Things I love to do for fun</h2>
+            <!-- <button id="clickToSeeButton" type="button" onclick="showList()">Click to see...</button> -->
+            <ul id="funList">
+                <li>Reading books</li>
+                <li>Crocheting</li>
+                <li>Traveling</li>
+                <li>Cooking</li>
+                <li>Spending time with friends</li>
+            </ul>
+        </div>
+        <div item2>
+            <img class="funIMG" src="../static/funIMG.png" alt="">
+        </div>
+        <div item3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z6PnPkvuhSQ?si=2Z9xsJVKyFuJzcLi" 
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div item4>
+            <div class="container">
+                <h2>Need some advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button id="getAdvice" type="button" onClick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
     </div>
 
     <footer>
