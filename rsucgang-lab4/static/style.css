@@ -1,0 +1,82 @@
+* {
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    margin: 5px;
+}
+/* .roboto-<uniquifier> {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+} */
+#webname {
+    background-color: #92ad70;
+    color: #ffffff;
+    padding: 10px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #92ad70;
+    margin-right: 15px;
+}
+th {
+    padding: 12px;
+    background-color: #A9A9A9;
+    color: #ffffff;
+    width: fit-content;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+form, form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#comment {
+    margin: 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+  }
+
+#funList {
+    display: none;
+}
+
+#clickToSeeButton {
+    font-style: italic;
+    background-color: lightgray;
+}
+
+#intro {
+    display: block;
+}
+
+#longIntro, #readLess {
+    display: none;
+}
+
+#readMore, #readLess {
+    font-style: italic;
+    background-color: lightgray;
+}
+
+.classA {
+    width: 200px;
+    display: inline-block;
+}
+
+#ValidateMsg {
+    width: max-content;
+    margin: auto;
+}
