@@ -49,9 +49,25 @@ ul {
     padding: 0;
   }
 
-#funList {
-    display: none;
+.funIMG {
+    border-radius: 100%;
+    width: 200px;
 }
+
+.mainLayout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.item1, .item2 {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* #funList {
+    display: none;
+} */
 
 #clickToSeeButton {
     font-style: italic;
@@ -79,4 +95,13 @@ ul {
 #ValidateMsg {
     width: max-content;
     margin: auto;
+}
+
+.container {
+    border-radius: 100%;
+    display: inline-block;
+    border-radius: 10%;
+    outline: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

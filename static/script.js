@@ -76,10 +76,10 @@ function addYear() {
     message.innerHTML += fullYear
 }
 
-function showList() {
-    document.getElementById("funList").style.display = "block";
-    document.getElementById("clickToSeeButton").style.display = "none";
-}
+// // function showList() {
+//     document.getElementById("funList").style.display = "block";
+//     document.getElementById("clickToSeeButton").style.display = "none";
+// }
 
 $("#readLess").click(function(){
     $("#longIntro").hide();
@@ -101,4 +101,17 @@ function validate() {
     if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()) {
         msg.innerHTML = "Please fill out the form correctly so I can get back to you :)";
     }
+ }
+
+ function getAdvice() {
+    fetch('https://api.adviceslip.com/advice')
+        .then(response => response.json()) // Convert response to JSON
+        .then(data => {
+            const advice = data.slip.advice; // Extract the "advice" text
+            document.getElementById("adviceText").innerText = advice; // Update webpage
+        })
+        .catch(error => {
+            console.error('Error fetching advice:', error);
+            document.getElementById("adviceText").innerText = "Failed to load advice. Please try again!";
+        });
  }
