@@ -105,10 +105,10 @@ function validate() {
 
  function getAdvice() {
     fetch('https://api.adviceslip.com/advice')
-        .then(response => response.json()) // Convert response to JSON
+        .then(response => response.json())
         .then(data => {
-            const advice = data.slip.advice; // Extract the "advice" text
-            document.getElementById("adviceText").innerText = advice; // Update webpage
+            const advice = data.slip.advice;
+            document.getElementById("adviceText").innerText = advice;
         })
         .catch(error => {
             console.error('Error fetching advice:', error);
