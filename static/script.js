@@ -67,7 +67,7 @@ function greetingFunc() {
     document.getElementById("greeting").innerHTML = greeting + ", my name is Rebecca!"
 }
 
-greetingFunc();
+// greetingFunc();
 
 function addYear() {
     var year = new Date();
@@ -76,42 +76,57 @@ function addYear() {
     message.innerHTML += fullYear
 }
 
-// // function showList() {
-//     document.getElementById("funList").style.display = "block";
-//     document.getElementById("clickToSeeButton").style.display = "none";
+function showList() {
+    document.getElementById("funList").style.display = "block";
+    document.getElementById("clickToSeeButton").style.display = "none";
+}
+
+// $("#readLess").click(function(){
+//     $("#longIntro").hide();
+//     $("#readLess").hide();
+//     $("#readMore").show();
+// });
+
+// $("#readMore").click(function(){
+//     $("#longIntro").show();
+//     $("#readLess").show();
+//     $("#readMore").hide();
+// });
+
+// function validate() {
+//     var userName = document.getElementById("UserName");
+//     var userEmail = document.getElementById("UserEmail");
+//     var userText = document.getElementById("UserText");
+//     var msg = document.getElementById("ValidateMsg");
+//     if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()) {
+//         msg.innerHTML = "Please fill out the form correctly so I can get back to you :)";
+//     }
+//  }
+
+
+ links = document.querySelectorAll('a');
+ newLinks = Array.from(links);
+ console.log(newLinks);
+ console.log(window.location);
+
+// must know these for loop and forEach loop for the final exam
+// what is the difference between these two?
+// forEach is built on an array, for: array.length could be a number
+
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
 // }
 
-$("#readLess").click(function(){
-    $("#longIntro").hide();
-    $("#readLess").hide();
-    $("#readMore").show();
+links.forEach(element => {
+    console.log(element);
+    window.location 
 });
 
-$("#readMore").click(function(){
-    $("#longIntro").show();
-    $("#readLess").show();
-    $("#readMore").hide();
-});
-
-function validate() {
-    var userName = document.getElementById("UserName");
-    var userEmail = document.getElementById("UserEmail");
-    var userText = document.getElementById("UserText");
-    var msg = document.getElementById("ValidateMsg");
-    if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()) {
-        msg.innerHTML = "Please fill out the form correctly so I can get back to you :)";
+function activeNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
- }
-
- function getAdvice() {
-    fetch('https://api.adviceslip.com/advice')
-        .then(response => response.json())
-        .then(data => {
-            const advice = data.slip.advice;
-            document.getElementById("adviceText").innerText = advice;
-        })
-        .catch(error => {
-            console.error('Error fetching advice:', error);
-            document.getElementById("adviceText").innerText = "Failed to load advice. Please try again!";
-        });
- }
+  }
