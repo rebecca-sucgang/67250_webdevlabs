@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Rebecca Sucgang">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="Rebecca Sucgang's professional website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="../static/script.js"></script>
+
+    <title>Rebecca Sucgang</title>
+</head>
+<body onload="addYear()">
+    <h1 id="webname">Rebecca Sucgang</h1>
+    <nav>
+        <ul style="list-style-type: none; padding: 0; margin: 0; display: flex;">
+            <li><a href="../index.html" class="nav-link">About</a></li>
+            <li><a href="cv.html" class="nav-link">Resume</a></li>
+            <li><a href="fun.html" class="nav-link">Play</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+<div class="mainLayout">
+    <div item1>
+        <h2>Find Me</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.1597790258834!2d-79.947327119289!3d40.44545274452275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie%20Mellon%20University!5e0!3m2!1sen!2sus!4v1742418134574!5m2!1sen!2sus" 
+        width="600" height="450" style="border:0;" allowfullscreen="" 
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div item2>
+        <h2>Contact Me</h2>
+        <form action=" ">
+            <label for="UserName">Your name (required): </label>
+            <input type="text" name="UserName" id="UserName" required>
+            <label for="UserEmail">Your email (required): </label>
+            <input type="email" name="UserEmail" id="UserEmail" required>
+            <label for="UserText">Your text (required): </label>
+            <textarea name="UserText" id="UserText" cols="30" rows="10" required></textarea>
+            <input type="submit" value="Send" onclick="validate()">
+        </form>
+        <p id="ValidateMsg"></p>   
+    </div>
+</div>
+
+<div>
+    <table>
+        <tr><th>Contact Method</th><th>Description</th>
+        <tr>
+            <td>Phone</td>
+            <td>443-254-5815</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>rsucgang@andrew.cmu.edu</td>
+        </tr>
+        <tr>
+            <td>LinkedIn</td>
+            <td>www.linkedin.com/in/rebecca-sucgang</td>
+        </tr>
+    </table>     
+</div>
+
+<footer>
+    <p id="copyYear">designed 👩🏻‍🎨 and coded 👩🏻‍💻 by Rebecca Sucgang  &copy;</p>
+</footer>
+</body>
+</html>
